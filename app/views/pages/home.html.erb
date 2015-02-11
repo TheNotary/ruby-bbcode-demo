@@ -1,5 +1,18 @@
-<h1>The ruby-bbcode Demo!<h1>
+<h1>The ruby-bbcode Demo!</h1>
 
 <p>Using bbcode in your ruby project is easy and powerful.</p>
 
+
+Example Code:
+<div class="example">
+  <% s = render("tags").html_safe %>
+  <% s.lines.each do |line| %>
+    <%= "<p>#{line}</p>".html_safe %>
+  <% end %>
+</div>
+
+Output:
+<div class="output">
+  <%= s.bbcode_to_html.html_safe %>
+</div>
 
