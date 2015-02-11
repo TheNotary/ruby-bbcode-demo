@@ -5,6 +5,9 @@ gem 'rails', '4.0.0'
 
 gem 'ruby-bbcode',  :git => 'git://github.com/veger/ruby-bbcode.git'
 
+
+gem 'pry'
+
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem "twitter-bootstrap-rails"

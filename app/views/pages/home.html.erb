@@ -3,9 +3,9 @@
 <p>Using bbcode in your ruby project is easy and powerful.</p>
 
 
-Example Code:
+Example BBCode:
 <div class="example well">
-  <% s = render("tags").html_safe %>
+  <% s = render("tags") %>
   <% s.lines.each do |line| %>
     <%= "<p>#{line}</p>".html_safe %>
   <% end %>
@@ -13,6 +13,8 @@ Example Code:
 
 Output:
 <div class="output well">
-  <%= s.bbcode_to_html.html_safe %>
+  <%= s.html_safe.bbcode_to_html.html_safe %>
 </div>
+
+
 
